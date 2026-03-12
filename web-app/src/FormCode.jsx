@@ -2,7 +2,7 @@ import './App.css';
 
 function FormCode(){
     return(
-    <div class="App">
+    <div className="App">
     <header>test</header>
     </div>
           );

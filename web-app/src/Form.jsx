@@ -2,11 +2,16 @@
 import new_logo from './new_logo.png';
 import './App.css';
 
+function ButtonChange() {
+  window.location.href = "/FormCode";
+  console.log("test");
+}
+
 function Form(){
     return (
-        <div class="App">
+        <div className="App">
           <header>
-            <img src={new_logo} class="Image" alt="logo" />
+            <img src={new_logo} className="Image" alt="logo" />
             <h1>
               Welcome to Epic cool app registration! Please fill out the following:
             </h1>
@@ -19,11 +24,12 @@ function Form(){
               
               
             </form>
-            <button type="button" id="submitbutton" onclick="document.getElementById('div').innerHTML = <header>test</header>">test</button>
+            <button type="button" id="submitbutton" onClick={()=>ButtonChange }>test</button>
     
           </header>
         </div>
       );
 }
+
 
 export default Form
